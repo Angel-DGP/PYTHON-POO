@@ -9,7 +9,7 @@ class Auto:
     def actualizar_kilometraje(self,new):
         if(new>self.kilometraje):
             self.kilometraje = new
-            print("KILOMETRAJE ACTUALIZADO CORRECTAMENTE")
+            print(f"KILOMETRAJE ACTUALIZADO CORRECTAMENTE\nNUEVO KILOMETRAJE:{self.kilometraje}")
         else:
             print("NO SE PUEDE REDUCIR EL KILOMETRAJE")
     def realizar_viaje(self,km_recorridos):
@@ -26,5 +26,8 @@ class Auto:
             print("¡Ya déjame descansar por favor!")
 
 
-AutoDid = Auto("Ford","Mustang","2024")
-AutoDid.mostrar_informacion()
+car = Auto("Ford","Mustang","2024")
+car.mostrar_informacion()
+car.actualizar_kilometraje(5000)
+car.realizar_viaje(360)
+car.estado_auto()
