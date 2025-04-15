@@ -19,3 +19,5 @@ class Laptop_Buisness(Laptop):
             else:
                 resultados[elemento] = "Algo ha fallado"
         return resultados
+    def __str__(self):
+        return f"Marca: {self.marca}\nProcesador: {self.procesador}\nMemoria RAM: {self.memoria}\nAlmacenamiento de disco: {self.al_disco}\nDuración bateria: {self.dur_bat}\nCosto: {self.costo}"

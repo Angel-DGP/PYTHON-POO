@@ -30,3 +30,11 @@ class Laptop:
             "BATERIA" : "OK" if random.choice([True,False]) else "Cambiar de Bateria"
         }
         return resultado
+    def realizar_informe_uso(self):
+        resultado_informe = {
+            "Tipo" : "Generica",
+            "Uso recomendado" : "Tareas cotidianas",
+            "Horas de uso" : 5,
+            "Diagnostico actual" : self.realizar_diagnostico()
+        }
+        return resultado_informe
